@@ -1,0 +1,19 @@
+.features {
+    min-height: 636px;
+    padding: 85px 0 0 0 ;
+    position: relative;
+
+    .t-subtitle {
+        text-align: center;
+    }
+
+    &__bg {
+        position: absolute;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+
+    }
+}

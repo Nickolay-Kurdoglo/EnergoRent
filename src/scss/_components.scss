@@ -1,0 +1,21 @@
+.btn.btn-send {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $c-accent;
+    transition: .2s;
+
+    svg {
+        fill: #ffffff;
+    }
+}
+
+.btn.btn-send:hover {
+    filter: brightness(1.1);
+}
+
+.btn.btn-send:active {
+    filter: brightness(0.99);
+}

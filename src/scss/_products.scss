@@ -1,0 +1,188 @@
+.products {
+    padding: 64px 0 0 0;
+
+    .wrapper {
+        max-width: 1200px;
+    }
+
+    .t-subtitle {
+        margin: 0 0 16px 0;
+    }
+
+    &__content {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__filters {
+        flex: 2 1 250px;
+
+    }
+
+    &__catalog {
+        flex: 8 1 800px;
+    }
+
+    &__power {
+        margin: 0 0 8px 0;
+        display: flex;
+        gap: 4px;
+
+        li a {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-flow: row wrap;
+    
+        gap: 32px 16px;
+    }
+
+    // Стили для фильтров
+
+    .filter {
+        margin: 4px 0;
+
+        &__header {
+            height: 48px;
+            padding: 0 32px 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $c-filter-bg;
+            cursor: pointer;
+        }
+
+        &__arrow {
+            transform: rotate(180deg);
+        }
+
+        &__content {
+            padding: 0 24px;
+            height: 0;
+            overflow: hidden;
+            transition: height .3s;
+        }
+
+        &__arrow {
+            transition: .2s;
+        }
+
+        &__show {
+            display: block;
+            margin: 8px 0 0 0;
+            text-decoration: none;
+            color: $c-blue-pastel;
+        }
+    }
+
+    // Стили карточки товара
+
+    .product {
+        padding: 8px;
+        flex: 1 1 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__image {
+            height: 180px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__title {
+            padding: 0 16px;
+            @include textStyle(17px, 400, 20px);
+            color: $c-primary;
+            text-align: center;
+        }
+
+        &__mark {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0 0 0;
+
+            span {
+                padding: 6px 12px;
+                border-radius: 13px;
+                @include textStyle(14px, 400, 16px);
+                color: $c-mark;
+                background-color: $c-mark-bg;
+            }
+        }
+
+        &__power {
+            @include textStyle(16px, 400, 18px);
+            text-align: center;
+            color: #7E858B;
+            margin: 32px 0 24px;
+
+        }
+        &__price {
+            margin: 0 0 16px 0;
+            @include textStyle(24px, 500, 28px);
+            text-align: center;
+        }
+
+        &__btn {
+            width: 80%;
+            padding: 16px 0 14px;
+            @include textStyle(18px, 400, 18px, uppercase);
+            border: $s-border-product-btn;
+            background-color: #fff;
+            color: $c-accent;
+            border-radius: 8px;
+            transition: .2s;
+            cursor: pointer;
+        }
+
+        &__btn:hover {
+            background-color: $c-accent;
+            color: #FFF;
+        }
+    }
+
+    &__panel-bottom {
+        margin: 48px 0 0 0;
+        display: flex;
+        justify-content: center;
+
+        .showMore {
+            cursor: pointer;
+            text-transform: uppercase;
+            padding: 16px 80px 14px;
+            color: #FFFFFF;
+            background-color: $c-primary;
+            border-radius: 6px;
+            transition: .2s;
+        }
+
+        .showMore:hover {
+            filter: brightness(1.1);
+        }
+
+        .showMore:active {
+            filter: brightness(0.98);
+        }
+    }
+}
+
+.filter.opened {
+
+    > .filter__content {
+        height: auto;
+        padding: 8px 24px;
+    }
+
+    .filter__arrow {
+        transform: rotate(0deg);
+    }
+}

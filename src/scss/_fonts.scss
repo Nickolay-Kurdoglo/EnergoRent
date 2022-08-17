@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../files/fonts/TTCommons-Medium.eot');
+    src: local('TT Commons Medium'), local('TTCommons-Medium'),
+        url('../files/fonts/TTCommons-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../files/fonts/TTCommons-Medium.woff2') format('woff2'),
+        url('../files/fonts/TTCommons-Medium.woff') format('woff'),
+        url('../files/fonts/TTCommons-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../files/fonts/TTCommons-DemiBold.eot');
+    src: local('TT Commons DemiBold'), local('TTCommons-DemiBold'),
+        url('../files/fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../files/fonts/TTCommons-DemiBold.woff2') format('woff2'),
+        url('../files/fonts/TTCommons-DemiBold.woff') format('woff'),
+        url('../files/fonts/TTCommons-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../files/fonts/TTCommons-Regular.eot');
+    src: local('TT Commons Regular'), local('TTCommons-Regular'),
+        url('../files/fonts/TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../files/fonts/TTCommons-Regular.woff2') format('woff2'),
+        url('../files/fonts/TTCommons-Regular.woff') format('woff'),
+        url('../files/fonts/TTCommons-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

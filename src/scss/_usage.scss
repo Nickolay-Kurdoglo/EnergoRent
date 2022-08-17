@@ -1,0 +1,47 @@
+.usage {
+    padding: 128px 0 112px 0;
+
+    .t-subtitle {
+        text-align: center;
+        margin: 0 0 64px 0;
+    }
+
+    &__tips {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 24px 16px;
+    }
+
+    &__tip {
+        height: 90px;
+        flex: 1 1 290px;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        overflow: hidden;
+        border: $s-border-tip;
+        transition: .2s;
+    }
+
+    &__tip:hover {
+        background-color: $c-primary;
+        
+        p {
+            color: #FFFFFF;
+        }
+    }
+
+    &__image {
+        width: 97px;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__description {
+        padding: 40px;
+    }
+}

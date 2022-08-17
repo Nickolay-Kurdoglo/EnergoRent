@@ -1,0 +1,35 @@
+.t-Heading {
+    @include textStyle(36px, 600, 41px);
+}
+
+.t-caption {
+    @include textStyle(17px, 400, 20px);
+    color: $c-gray;
+}
+
+.t-subtitle {
+    @include textStyle(28px, 500, 32px, uppercase);
+}
+
+.t-power {
+    @include textStyle(16px, 400, 18px);
+    color: $c-primary;
+    text-decoration: none;
+    padding: 8px 12px 6px 12px;
+    border: $s-border-power;
+    transition: .2s;
+}
+
+.t-power:hover {
+    color: #FFFFFF;
+    background-color: $c-primary;
+}
+
+.t-usage-tip {
+    @include textStyle(16px, 400, 18px, uppercase);
+    color: $c-dark-gray;
+}
+
+.t-standart {
+    @include textStyle(16px, 400, 18px);
+}

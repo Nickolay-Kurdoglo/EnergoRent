@@ -1,0 +1,6 @@
+@mixin textStyle ($fontSize, $fontWeight, $lineHeight, $textTransform : none) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    text-transform: $textTransform;
+}
