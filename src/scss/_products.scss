@@ -5,7 +5,7 @@
         max-width: 1200px;
     }
 
-    .t-subtitle {
+    .t-subtitle-2 {
         margin: 0 0 16px 0;
     }
 
@@ -25,10 +25,14 @@
 
     &__power {
         margin: 0 0 8px 0;
+        height: 34px;
         display: flex;
         gap: 4px;
+        overflow-x: auto;
 
-        li a {
+        a {
+            flex: 0 0 auto;
+            text-align: center;
             display: block;
             cursor: pointer;
         }
@@ -37,8 +41,10 @@
     &__container {
         display: flex;
         flex-flow: row wrap;
-    
+        justify-content: start;
+        align-items: flex-start;
         gap: 32px 16px;
+        overflow: hidden;
     }
 
     // Стили для фильтров
@@ -151,6 +157,7 @@
     }
 
     &__panel-bottom {
+
         margin: 48px 0 0 0;
         display: flex;
         justify-content: center;

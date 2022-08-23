@@ -1,0 +1,53 @@
+.moreServices {
+    background-color: $c-primary;
+    padding: 72px 0;
+    position: relative;
+    overflow: hidden;
+
+    .serviceBG {
+        position: absolute;
+        top: 16px;
+        left: 1000px;
+    }
+
+    .t-subtitle-2 {
+        margin: 0 0 32px 0;
+        color: white;
+    }
+
+    .services {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 24px;
+        position: relative;
+        z-index: 32;
+    }
+    .service {
+        flex: 1 1 500px;
+        padding: 32px;
+        display: flex;
+        justify-content: space-between;
+        border: $s-border-service;
+        color: white;
+        transition: .2s;
+        cursor: pointer;
+
+        p {
+            max-width: 275px;
+        }
+        
+        svg {
+            fill:white;
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    .service:hover {
+        background-color: white;
+        color: $c-primary;
+        svg {
+            fill: $c-primary;
+        }
+    }
+}

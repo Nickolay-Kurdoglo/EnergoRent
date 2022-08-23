@@ -1,0 +1,64 @@
+.footer {
+    padding: 72px 0 0 0;
+
+    &__head {
+        display: flex;
+        padding: 0 0 72px 0;
+    }
+
+    &__left {
+        flex: 1 1 auto;
+    }
+
+    &__nav {
+        flex: 1 1 auto;
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: $c-primary;
+    }
+
+    .btn {
+        margin: 64px 0 0 0;
+        padding: 18px 32px 16px;
+        background-color: #fff;
+        color: $c-primary;
+        border: 1px solid #2A3EA4;
+    }
+
+    &__contact {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .tel {
+            @include textStyle(30px, 500, 34px);
+            text-decoration: none;
+            color: #393939;
+        }
+        .mail {
+            margin: 32px 0 0 0;
+            @include textStyle(17px, 400, 20px);
+            text-decoration: none;
+            color: $c-accent;
+        }
+    }
+
+    &__bottom {
+        padding: 32px 0;
+        display: flex;
+        justify-content: center;
+
+        p {
+            color: $c-gray;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,45 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
     <!-- Вывод оффера -->
-    
-    
+    <section class="offer">
+    <div class="wrapper">
+        <div class="offer__content">
+            <h1 class="t-Heading">
+                Аренда генераторов <br>
+                в Москве и Московской <br>
+                области
+            </h1>
+            <div class="offer__phone">
+                <input type="text" placeholder="+ 7 (999) 999 99 99">
+                <button class="btn btn-send">
+                    <svg>
+                        <use href="img/icons/send.svg#send" xlink:href="img/icons/send.svg#send"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="offer__caption">
+                <span class="t-caption">Оставьте свой номер мы свяжемся с вами <br> в ближайщее время</span>
+            </div>
+        </div>
+        <div class="offer__pictures">
+            <img src="img/mainPhoto.png" alt="">
+            <img src="img/offerbg.png" alt="">
+        </div>
+    </div>
+    <div class="offer__bg">
+        <div class="offer__gray-bg"></div>
+        <div class="offer__blue-bg"></div>
+    </div>
+</section> 
+
     <!-- Товары и фильтр -->
     <section class="products">
     <div class="wrapper">
-        <h3 class="t-subtitle">Каталог генераторов</h3>
+        <h2 class="t-subtitle-2">Каталог генераторов</h2>
         <div class="products__content">
             <div class="products__panel products__filters" id="filter">
                 <div class="filter">
@@ -81,43 +111,35 @@
                         <ul class="filter__container">
 
                             <li class="filter__parametr checkbox">
-                                <input class="checkbox_original" type="checkbox" id="power_prm_16">
-                                <label for="power_prm_16" class="checkbox_rec">
+                                <input class="checkbox_original" type="checkbox" id="aksa">
+                                <label for="aksa" class="checkbox_rec">
                                     <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
                                 </label>
-                                <label for="power_prm_16" name="f-power" value="16" class="checkbox_label">16 кВт</label>
+                                <label for="aksa" name="f-manufacturer" value="16" class="checkbox_label">AKSA</label>
                             </li>
     
                             <li class="filter__parametr checkbox">
-                                <input class="checkbox_original" type="checkbox" id="power_prm_30">
-                                <label for="power_prm_30" class="checkbox_rec">
+                                <input class="checkbox_original" type="checkbox" id="cummins">
+                                <label for="cummins" class="checkbox_rec">
                                     <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
                                 </label>
-                                <label for="power_prm_30" name="f-power" value="30" class="checkbox_label">30 кВт</label>
+                                <label for="cummins" name="f-manufacturer" value="30" class="checkbox_label">Cummins</label>
                             </li>
     
                             <li class="filter__parametr checkbox">
-                                <input class="checkbox_original" type="checkbox" id="power_prm_40">
-                                <label for="power_prm_40" class="checkbox_rec">
+                                <input class="checkbox_original" type="checkbox" id="caterpillar">
+                                <label for="caterpillar" class="checkbox_rec">
                                     <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
                                 </label>
-                                <label for="power_prm_40" name="f-power" value="40" class="checkbox_label">40 кВт</label>
+                                <label for="caterpillar" name="f-manufacturer" value="40" class="checkbox_label">Caterpillar</label>
                             </li>
     
                             <li class="filter__parametr checkbox">
-                                <input class="checkbox_original" type="checkbox" id="power_prm_50">
-                                <label for="power_prm_50" class="checkbox_rec">
+                                <input class="checkbox_original" type="checkbox" id="wilson">
+                                <label for="wilson" class="checkbox_rec">
                                     <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
                                 </label>
-                                <label for="power_prm_50" name="f-power" value="50" class="checkbox_label">50 кВт</label>
-                            </li>
-    
-                            <li class="filter__parametr checkbox">
-                                <input class="checkbox_original" type="checkbox" id="power_prm_60">
-                                <label for="power_prm_60" class="checkbox_rec">
-                                    <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
-                                </label>
-                                <label for="power_prm_60" name="f-power" value="60" class="checkbox_label">60 кВт</label>
+                                <label for="wilson" name="f-manufacturer" value="50" class="checkbox_label">FG Wilson</label>
                             </li>
     
                         </ul>
@@ -391,7 +413,7 @@
                 </div>
             </div>
             <div class="products__panel products__catalog">
-                <ul class="products__power">
+                <!-- <ul class="products__power">
                     <li><a class="t-power" href="">60 кВт</a></li>
                     <li><a class="t-power" href="">70 кВт</a></li>
                     <li><a class="t-power" href="">100 кВт</a></li>
@@ -402,7 +424,20 @@
                     <li><a class="t-power" href="">500 кВт</a></li>
                     <li><a class="t-power" href="">600 кВт</a></li>
                     <li><a class="t-power" href="">1000 кВт</a></li>
-                </ul>
+                </ul> -->
+                <div class="products__power">
+                    
+                    <a class="t-power" href="">60 кВт</a>
+                    <a class="t-power" href="">70 кВт</a>
+                    <a class="t-power" href="">100 кВт</a>
+                    <a class="t-power" href="">200 кВт</a>
+                    <a class="t-power" href="">240 кВт</a>
+                    <a class="t-power" href="">300 кВт</a>
+                    <a class="t-power" href="">400 кВт</a>
+                    <a class="t-power" href="">500 кВт</a>
+                    <a class="t-power" href="">600 кВт</a>
+                    <a class="t-power" href="">1000 кВт</a>
+                </div>
                 <div class="products__container">
                     <div class="product">
                         <div class="product__image">
@@ -527,17 +562,17 @@
             </div>
         </div>
     </div>
-</section> 
+</section>
 
     <!-- Где нужны генераторы -->
     <section class="usage">
     <div class="wrapper">
-        <h3 class="t-subtitle">Где нужны генераторы</h3>
+        <h3 class="t-subtitle-2">Где нужны генераторы</h3>
         <div class="usage__tips">
 
             <div class="usage__tip">
                 <div class="usage__image">
-                    <img src="img/usage/welding.png" alt="">
+                    <img src="img/usage/forMovie.png" alt="">
                 </div>
                 <p class="usage__description t-usage-tip">
                     для съемок кино
@@ -549,43 +584,43 @@
                     <img src="img/usage/welding.png" alt="">
                 </div>
                 <p class="usage__description t-usage-tip">
-                    для съемок кино
+                    для сварки
                 </p>
             </div>
 
             <div class="usage__tip">
                 <div class="usage__image">
-                    <img src="img/usage/welding.png" alt="">
+                    <img src="img/usage/party.png" alt="">
                 </div>
                 <p class="usage__description t-usage-tip">
-                    для съемок кино
+                    на мероприятие
                 </p>
             </div>
 
             <div class="usage__tip">
                 <div class="usage__image">
-                    <img src="img/usage/welding.png" alt="">
+                    <img src="img/usage/lightning.png" alt="">
                 </div>
                 <p class="usage__description t-usage-tip">
-                    для съемок кино
+                    для уличного освещения
                 </p>
             </div>
 
             <div class="usage__tip">
                 <div class="usage__image">
-                    <img src="img/usage/welding.png" alt="">
+                    <img src="img/usage/cement.png" alt="">
                 </div>
                 <p class="usage__description t-usage-tip">
-                    для съемок кино
+                    для прогрева бетона
                 </p>
             </div>
 
             <div class="usage__tip">
                 <div class="usage__image">
-                    <img src="img/usage/welding.png" alt="">
+                    <img src="img/usage/electronic.png" alt="">
                 </div>
                 <p class="usage__description t-usage-tip">
-                    для съемок кино
+                    для промышленности
                 </p>
             </div>
 
@@ -596,14 +631,312 @@
     <!-- Почему выбирают нашу компанию -->
     <section class="features">
     <div class="wrapper">
-        <h3 class="t-subtitle">Почему выбирают нашу компанию</h3>
-    </div>
-    <div class="features__container">
-        
+        <h2 class="t-subtitle-2">Почему выбирают нашу компанию</h2>
+        <div class="features__container">
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/electronic.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Поставка в день обращения
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/wire.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Поможем подключить
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/fuel.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Заправим топливом
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/cash.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Залог не требуется
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/setting.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Обеспечим безаварийную работу
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/tool.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Бесплатное техническое обслуживание
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/call.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Круглосуточная техническая поддержка
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature__image">
+                    <img class="feature__image-icon" src="img/icons/features/deliver.svg" alt="">
+                    <img class="feature__image-bg" src="img/icons/features/lightning.svg" alt="">
+                </div>
+                <p class="feature__description t-standart-lr">
+                    Выезжаем на объект при необходимости
+                </p>
+            </div>
+        </div>
     </div>
     <img class="features__bg" src="img/featuresBG.png" alt="">
 </section>
-    
+
+    <!-- Аренда генераторов в МСК и МО -->
+    <section class="description">
+    <div class="wrapper">
+        <div class="description__text">
+            <h2 class="t-subtitle-2">Аренда генераторов в Москве и Московской области</h2>
+            <p class="t-standart-lr">
+                При работе на объектах, не подключенных к централизованным энергосетям, или в случае невозможности использования местной линии электропередач вы можете арендовать генератор.
+            </p>
+            <h4 class="t-subtitle-4">Выбор генератора</h4>
+            <p class="t-standart-lr">
+                У каждого вида представленных в нашем каталоге генераторов имеются свои особенности и преимущества, которые нужно учитывать при выборе установки напрокат. Вам необходимо учитывать:
+            </p>
+            <ul class="description__tips">
+                <li class="t-standart-lr">условия и характер эксплуатации установки;</li>
+                <li class="t-standart-lr">тип объекта и его специфику;</li>
+                <li class="t-standart-lr">необходимые объемы генерации с учетом возможных всплесков энергопотребления.</li>
+            </ul>
+            <p class="t-standart-lr">
+                При необходимости специалисты помогут вам с выбором оптимального варианта и скомплектуют полный перечень необходимого сопутствующего оборудования. Также возможны доставка на объект нашим транспортом, подготовка установки и пуск в эксплуатацию.
+            </p>
+        </div>
+        <div class="description__img">
+            <img src="img/description/description.png" alt="">
+        </div>
+    </div>
+</section>
+
+    <!-- Форма обратной связи -->
+    <section class="consult">
+    <div class="wrapper">
+        <h2 class="t-subtitle-2">
+            Отправить запрос на бесплатную консультацию
+        </h2>
+        <div class="consult__content">
+            <form action="">
+                <div class="consult__textFields">
+                    <input type="text" class="textInput" placeholder="Ваше имя">
+                    <input type="tel" class="textInput" placeholder="+7 (999) 999-99-99">
+                    <textarea class="textInput" name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <li class="consult__agreement checkbox">
+                    <input class="checkbox_original" type="checkbox" id="privacy">
+                    <label for="privacy" class="checkbox_rec">
+                        <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
+                    </label>
+                    <label for="privacy" name="privacy" value="yes" class="checkbox_label">Cогласен на обработку моих персональных данных</label>
+                </li>
+                <button class="btn">
+                    Отправить
+                    <svg>
+                        <use href="img/icons/send.svg#send" xlink:href="img/icons/send.svg#send"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="consult__phone">
+                <a href="tel:+7 (495) 926 76 76 ">+7 (495) 926 76 76</a>
+                <p class="t-caption">Нужен генератор? Звоните!</p>
+            </div>
+            <img class="lightning" src="img/icons/bigLightning.svg" alt="">
+        </div>
+    </div>
+</section>
+
+    <!-- Партнеры -->
+    <section class="partners">
+    <div class="wrapper">
+        <h2 class="t-subtitle-2">
+            бренды, с которыми мы работаем
+        </h2>
+        <div class="partners__brands">
+            <img src="img/parthners/denyo.png" alt="DENYO">
+            <img src="img/parthners/fgWilson.png" alt="FG Wilson">
+            <img src="img/parthners/gmgen.png" alt="GM Gen">
+            <img src="img/parthners/kohler.png" alt="KOHLER">
+            <img src="img/parthners/mosa.png" alt="MOSA">
+        </div>
+        <h2 class="t-subtitle-2">
+            как мы работаем
+        </h2>
+        <div class="partners__process">
+            <div class="process">
+                <div class="process__img">
+                    <img src="img/howWeWork/generator.png" alt="">
+                </div>
+                <p class="process__number">
+                    01.
+                </p>
+                <p class="process__descpription t-standart-lr">
+                    Выбираете услуги и запрашиваете необходимый генератор
+                </p>
+            </div>
+
+            <div class="process">
+                <div class="process__img">
+                    <img src="img/howWeWork/human.png" alt="">
+                </div>
+                <p class="process__number">
+                    02.
+                </p>
+                <p class="process__descpription t-standart-lr">
+                    Предоставьте необходимые документы
+                </p>
+            </div>
+
+            <div class="process">
+                <div class="process__img">
+                    <img src="img/howWeWork/writer.png" alt="">
+                </div>
+                <p class="process__number">
+                    03.
+                </p>
+                <p class="process__descpription t-standart-lr">
+                    Заключаем договор аренды
+                </p>
+            </div>
+
+            <div class="process">
+                <div class="process__img">
+                    <img src="img/howWeWork/kohlerGenerator.png" alt="">
+                </div>
+                <p class="process__number">
+                    04.
+                </p>
+                <p class="process__descpription t-standart-lr">
+                    Принимайте оборудование и пользуйтесь электричеством без проблем!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Большое услуг -->
+    <section class="moreServices">
+    <div class="wrapper">
+        <h2 class="t-subtitle-2">Дополнительные услуги</h2>
+        <div class="services">
+            <div class="service">
+                <p class="service__description t-service">Доставка и такелажные работы</p>
+                <svg>
+                    <use href="img/icons/arrow.svg#arrow" xlink:href="img/icons/arrow.svg#arrow"></use>
+                </svg>
+            </div>
+
+            <div class="service">
+                <p class="service__description t-service">Синхронизация нескольких ДГУ</p>
+                <svg>
+                    <use href="img/icons/arrow.svg#arrow" xlink:href="img/icons/arrow.svg#arrow"></use>
+                </svg>
+            </div>
+            
+            <div class="service">
+                <p class="service__description t-service">Прокладка кабельных линий</p>
+                <svg>
+                    <use href="img/icons/arrow.svg#arrow" xlink:href="img/icons/arrow.svg#arrow"></use>
+                </svg>
+            </div>
+
+            <div class="service">
+                <p class="service__description t-service">Обеспечение топливом</p>
+                <svg>
+                    <use href="img/icons/arrow.svg#arrow" xlink:href="img/icons/arrow.svg#arrow"></use>
+                </svg>
+            </div>
+
+            <div class="service">
+                <p class="service__description t-service">Инженерный и операторский посты</p>
+                <svg>
+                    <use href="img/icons/arrow.svg#arrow" xlink:href="img/icons/arrow.svg#arrow"></use>
+                </svg>
+            </div>
+            
+            <div class="service">
+                <p class="service__description t-service">Монтаж дополнительных систем</p>
+                <svg>
+                    <use href="img/icons/arrow.svg#arrow" xlink:href="img/icons/arrow.svg#arrow"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <img class="serviceBG" src="img/icons/serviceBg.svg" alt="">
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer__head">
+            <div class="footer__left">
+                <img src="img/icons/logo_wb.svg" alt="">
+                <button class="btn">
+                    <svg>
+                        <use href="img/icons/phone.svg#phone" xlink:href="img/icons/phone.svg#phone"></use>
+                    </svg>
+                    Заказать звонок
+                </button>
+            </div>
+            <nav class="footer__nav">
+                <ul class="nav">
+                    <li><a href="" class="nav__item t-nav-footer">Главная</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Каталог генераторов</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Цены</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Наши улуги</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contact">
+                <a class="tel" href="tel:+7 (495) 926 76 76 ">+7 (495) 926 76 76</a>
+                <p class="t-caption">Нужен генератор? Звоните!</p>
+                <a class="mail" href="mailto:energorent@gmail.com">energorent@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="wrapper">
+        <div class="footer__bottom">
+            <p class="t-standart">Аренда генераторов Москва и МО. Все права защищены © 2021  </p>
+        </div>
+    </div>
+</footer>
+
     <script src="js/script.min.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,7 @@
     height: 558px;
     padding: 72px 0 0 0;
     position: relative;
+    overflow: hidden;
     
     .wrapper {
         display: flex;
@@ -15,18 +16,22 @@
         h1 {
             margin: 0 0 64px 0;
         }
-
         
+    }
+
+    .btn {
+        padding: 8px;
+
+        svg {
+            width: 19px;
+            height: 19px;
+        }
     }
 
     &__caption {
         margin: 24px 0 0 0;
     }
 
-    svg {
-        width: 19px;
-        height: 19px;
-    }
     &__phone {
         display: flex;
         align-items: stretch;
@@ -54,20 +59,21 @@
         z-index: -10;
         top: 0;
         left: 0;
-        width: 100vw;
+        bottom: 0;
+        right: 0;
         height: 100%;
         display: flex;
     }
 
     &__gray-bg {
+        flex: 2 1 auto;
         height: 100%;
-        width: 65%;
         background-color: #F8F8F8;
     }
 
     &__blue-bg {
+        flex: 1 1 auto;
         height: 100%;
-        width: 35%;
         background-color: $c-primary;
     }
 }

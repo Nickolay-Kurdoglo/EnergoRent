@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include("html/head.html", {
-        "title" : "Main page"
-    })
+@@include("html/head.html", {
+"title" : "Main page"
+})
+
 <body>
 
     <!-- Вывод оффера -->
-    <!-- @@include("html/offer.html", {})  -->
-    
+    @@include("html/offer.html", {}) 
+
     <!-- Товары и фильтр -->
-    @@include("html/products.html", {}) 
+    @@include("html/products.html", {})
 
     <!-- Где нужны генераторы -->
     @@include("html/usage.html", {})
 
     <!-- Почему выбирают нашу компанию -->
     @@include("html/features.html", {})
-    
+
+    <!-- Аренда генераторов в МСК и МО -->
+    @@include("html/description.html", {})
+
+    <!-- Форма обратной связи -->
+    @@include("html/consult.html", {})
+
+    <!-- Партнеры -->
+    @@include("html/partners.html", {})
+
+    <!-- Большое услуг -->
+    @@include("html/more_services.html", {})
+
+    <!-- Footer -->
+    @@include("html/footer.html", {})
+
     <script src="js/script.min.js"></script>
 </body>
+
 </html>

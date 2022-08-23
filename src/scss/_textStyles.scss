@@ -7,8 +7,16 @@
     color: $c-gray;
 }
 
-.t-subtitle {
+.t-subtitle-2 {
     @include textStyle(28px, 500, 32px, uppercase);
+}
+
+.t-subtitle-4 {
+    @include textStyle(20px, 500, 23px);
+}
+
+.t-service {
+    @include textStyle(24px, 400, 28px)
 }
 
 .t-power {
@@ -32,4 +40,19 @@
 
 .t-standart {
     @include textStyle(16px, 400, 18px);
+}
+
+.t-standart-lr {
+    @include textStyle(20px, 400, 24px);
+}
+
+.t-nav-footer {
+    @include textStyle(20px, 400, 23px);
+    text-decoration: none;
+    color: $c-gray;
+    transition: .2s;
+}
+
+.t-nav-footer:hover {
+    color: $c-primary;
 }

@@ -1,0 +1,41 @@
+.description {
+    padding: 72px 0;
+
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__text {
+        flex: 10 1 550px;
+
+        > .t-standart-lr {
+            color: #5E6368;
+            margin: 40px 0;
+        }
+
+        > .t-standart-lr:nth-child(4) {
+            margin: 8px 0;
+        }
+    }
+
+    &__tips {
+        margin: 0 0 0 24px;
+        list-style-type: square;
+
+        li::marker {
+            color: $c-primary;
+        }
+    }
+
+    &__img {
+        flex: 4 1 270px;
+        img {
+            height: 432px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
