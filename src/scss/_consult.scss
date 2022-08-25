@@ -29,6 +29,7 @@
 
         textarea {
             flex: 10 1 760px;
+            resize: none;
         }
     }
 
@@ -69,5 +70,16 @@
         z-index: 1;
         top: 24px;
         left: 1200px;
+    }
+
+    @media screen and (max-width: 512px) {
+        .btn {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        &__phone {
+            align-items: start;
+        }
     }
 }

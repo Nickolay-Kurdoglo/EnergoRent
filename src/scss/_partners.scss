@@ -8,10 +8,10 @@
     &__brands {
         margin: 56px 0 64px 0;
         display: flex;
-        justify-content: space-between;
+        gap: 32px 64px;
+        justify-content: center;
         align-items: center;
         flex-flow: row wrap;
-
     }
 
     &__process {
@@ -68,6 +68,12 @@
                 font-size: 18px;
             }
             
+        }
+    }
+
+    @media screen and (max-width: 748px) {
+        &__brands {
+            gap: 32px;
         }
     }
 }

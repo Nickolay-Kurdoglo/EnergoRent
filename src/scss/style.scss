@@ -14,6 +14,8 @@
 
 @import "wrapper";
 
+@import "popup";
+
 @import "offer";
 
 @import "products";
@@ -31,3 +33,7 @@
 @import "moreServices";
 
 @import "footer";
+
+.hide {
+    display: none;
+}

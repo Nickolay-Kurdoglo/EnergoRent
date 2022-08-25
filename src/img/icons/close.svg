@@ -1,0 +1,8 @@
+<svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+
+    <symbol class="close" id="close" xmlns="http://www.w3.org/2000/svg">
+        <rect width="19.7036" height="2" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 7.67334 21.6059)" fill="#9F9B95"/>
+        <rect width="19.7036" height="2" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 21.606 20.1917)" fill="#9F9B95"/>
+    </symbol>
+
+</svg>

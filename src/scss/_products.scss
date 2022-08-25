@@ -11,31 +11,51 @@
 
     &__content {
         display: flex;
+        flex-flow: row nowrap;
         gap: 24px;
     }
 
     &__filters {
-        flex: 2 1 250px;
-
+        flex: 1 1 192px;
+        min-width: 250px;
     }
 
     &__catalog {
         flex: 8 1 800px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__power {
+        background-color: red;
         margin: 0 0 8px 0;
-        height: 34px;
+        width: 100%;
+        height: 35px;
         display: flex;
-        gap: 4px;
-        overflow-x: auto;
+        gap: 0 4px;
+        overflow-y: hidden;
+        overflow-x: scroll;
 
+        .item {
+            width: 100px;
+            background-color: orange;
+        }
+
+        .power__container {
+            display: flex;
+            gap: 0 4px;
+        }
         a {
             flex: 0 0 auto;
             text-align: center;
             display: block;
             cursor: pointer;
         }
+    }
+
+    &__power::-webkit-scrollbar {
+        height: 0;
+        /* width of the entire scrollbar */
     }
 
     &__container {
@@ -93,7 +113,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         &__image {
             height: 180px;
 
@@ -132,6 +152,7 @@
             margin: 32px 0 24px;
 
         }
+
         &__price {
             margin: 0 0 16px 0;
             @include textStyle(24px, 500, 28px);
@@ -180,11 +201,17 @@
             filter: brightness(0.98);
         }
     }
+
+    @media screen and (max-width: 880px) {
+        &__content {
+            flex-flow: column wrap;
+        }
+    }
 }
 
 .filter.opened {
 
-    > .filter__content {
+    >.filter__content {
         height: auto;
         padding: 8px 24px;
     }
