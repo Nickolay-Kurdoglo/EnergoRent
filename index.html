@@ -21,7 +21,7 @@
                 области
             </h1>
             <div class="offer__phone">
-                <input type="text" placeholder="+ 7 (999) 999 99 99">
+                <input type="tel" placeholder="+ 7 (999) 999 99 99">
                 <button class="btn btn-send">
                     <svg>
                         <use href="img/icons/send.svg#send" xlink:href="img/icons/send.svg#send"></use>
@@ -413,21 +413,8 @@
                 </div>
             </div>
             <div class="products__panel products__catalog">
-                <!-- <ul class="products__power">
-                    <li><a class="t-power" href="">60 кВт</a></li>
-                    <li><a class="t-power" href="">70 кВт</a></li>
-                    <li><a class="t-power" href="">100 кВт</a></li>
-                    <li><a class="t-power" href="">200 кВт</a></li>
-                    <li><a class="t-power" href="">240 кВт</a></li>
-                    <li><a class="t-power" href="">300 кВт</a></li>
-                    <li><a class="t-power" href="">400 кВт</a></li>
-                    <li><a class="t-power" href="">500 кВт</a></li>
-                    <li><a class="t-power" href="">600 кВт</a></li>
-                    <li><a class="t-power" href="">1000 кВт</a></li>
-                </ul> -->
                 <div class="products__power">
-                    
-                    <a class="t-power" href="">60 кВт</a>
+                    <!-- <a class="t-power" href="">60 кВт</a>
                     <a class="t-power" href="">70 кВт</a>
                     <a class="t-power" href="">100 кВт</a>
                     <a class="t-power" href="">200 кВт</a>
@@ -436,7 +423,14 @@
                     <a class="t-power" href="">400 кВт</a>
                     <a class="t-power" href="">500 кВт</a>
                     <a class="t-power" href="">600 кВт</a>
-                    <a class="t-power" href="">1000 кВт</a>
+                    <a class="t-power" href="">1000 кВт</a> -->
+
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
                 </div>
                 <div class="products__container">
                     <div class="product">
@@ -757,13 +751,13 @@
                     <input type="tel" class="textInput" placeholder="+7 (999) 999-99-99">
                     <textarea class="textInput" name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                 </div>
-                <li class="consult__agreement checkbox">
+                <div class="consult__agreement checkbox">
                     <input class="checkbox_original" type="checkbox" id="privacy">
                     <label for="privacy" class="checkbox_rec">
                         <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
                     </label>
                     <label for="privacy" name="privacy" value="yes" class="checkbox_label">Cогласен на обработку моих персональных данных</label>
-                </li>
+                </div>
                 <button class="btn">
                     Отправить
                     <svg>
@@ -905,7 +899,7 @@
         <div class="footer__head">
             <div class="footer__left">
                 <img src="img/icons/logo_wb.svg" alt="">
-                <button class="btn">
+                <button class="btn outlined js-popup-open">
                     <svg>
                         <use href="img/icons/phone.svg#phone" xlink:href="img/icons/phone.svg#phone"></use>
                     </svg>
@@ -935,6 +929,40 @@
         </div>
     </div>
 </footer>
+
+    <!-- popup -->
+    <section class="popup hide" id="popup">
+    <div class="popup__card">
+        <div class="popup__content">
+            <div class="popup__close" id="close">
+                    <svg>
+                        <use href="img/icons/close.svg#close" xlink:href="img/icons/close.svg#close"></use>
+                    </svg>
+            </div>
+            <h2 class="t-subtitle-2">Оставьте заявку</h2>
+            <form action="" class="pupup__form">
+                <input class="textInput" type="text" placeholder="ваше имя">
+                <input class="textInput" type="tel" placeholder="+ 7 (999) 999 99 99">
+                <button class="btn" type="submit">
+                    Отправить
+                    <svg>
+                        <use href="img/icons/send.svg#send" xlink:href="img/icons/send.svg#send"></use>
+                    </svg>
+                </button>
+                <div class="checkbox">
+                    <input class="checkbox_original" type="checkbox" id="popup_privacy">
+                    <label for="popup_privacy" class="checkbox_rec">
+                        <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
+                    </label>
+                    <label for="popup_privacy" name="privacy" value="yes" class="checkbox_label">Cогласен на обработку моих
+                        персональных данных</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup__overlay colored"></div>
+</section>
+    
 
     <script src="js/script.min.js"></script>
 </body>
