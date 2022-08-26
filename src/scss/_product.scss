@@ -4,11 +4,12 @@
     &__offer {
         margin: 48px 0 0 0;
         display: flex;
+        flex-flow: row wrap;
         gap: 40px;
     }
 
     &__info {
-        flex: 1 1 auto;
+        flex: 1 1 330px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -16,8 +17,7 @@
     }
 
     &__image {
-        flex: 1 1 auto;
-        max-width: 560px;
+        flex: 5 1 400px;
         height: 400px;
         border: 1px solid #F0F0F0;
 
@@ -77,6 +77,7 @@
 
         &__tabs {
             display: flex;
+            margin: 0 0 48px 0  ;
             gap: 32px;
 
             .tab {
@@ -92,8 +93,18 @@
             }
         }
 
+        &__content {
+            div {
+                display: none;
+            }
+
+            & > .active {
+                display: block;
+            }
+        }
+
         &__title {
-            margin: 48px 0 24px 0;
+            margin: 32px 0 24px 0;
         }
 
         table {
@@ -119,6 +130,22 @@
 
             tr:last-child {
                 border-bottom: 1px solid #DFDCDC;
+            }
+        }
+
+        &__specification {
+
+            .t-standart-lr {
+                color: $c-dark-gray
+            }
+        }
+    }
+
+    @media screen and (max-width: 748px) {
+        .description {
+
+            table {
+                width: 100%;
             }
         }
     }

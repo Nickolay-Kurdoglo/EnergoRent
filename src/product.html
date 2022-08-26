@@ -33,30 +33,59 @@
                     </ul>
                 </div>
             </section>
-            <div class="description">
+            <div class="description" id="tabs">
                 <div class="description__tabs">
-                    <div class="tab active">Характеристики</div>
-                    <div class="tab">Описание</div>
+                    <div data-tab="#tab-0" class="js-tabs tab active">Характеристики</div>
+                    <div data-tab="#tab-1" class="js-tabs tab">Описание</div>
                 </div>
                 <div class="description__content">
-                    <p class="description__title">
-                        Основные параметры:
-                    </p>
-                    <table>
-                        <tr><td>Номинальная мощность (основная)</td><td>1364 кВА / 1094 кВт</td></tr>
-                        <tr><td>Мощность (резервная)</td><td>1500 кВА / 1200 кВт</td></tr>
-                        <tr><td>Габариты</td><td>6800*2160*2760 (ДxШxВ), мм</td></tr>
-                        <tr><td>Вес</td><td>11 100 кг</td></tr>
-                    </table>
-                    <p class="description__title">
-                        Двигатель:
-                    </p>
-                    <table>
-                        <tr><td>Модель</td><td>KOHLER KD36V16-5BFS</td></tr>
-                        <tr><td>Производство</td><td>Франция</td></tr>
-                        <tr><td>Обороты</td><td>1500 об/м</td></tr>
-                        <tr><td>Топливо</td><td>Дизельное</td></tr>
-                    </table>
+                    <div id="tab-0" class="js-tab-list description__characteristics active">
+                        <p class="description__title ">
+                            Основные параметры:
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Номинальная мощность (основная)</td>
+                                <td>1364 кВА / 1094 кВт</td>
+                            </tr>
+                            <tr>
+                                <td>Мощность (резервная)</td>
+                                <td>1500 кВА / 1200 кВт</td>
+                            </tr>
+                            <tr>
+                                <td>Габариты</td>
+                                <td>6800*2160*2760 (ДxШxВ), мм</td>
+                            </tr>
+                            <tr>
+                                <td>Вес</td>
+                                <td>11 100 кг</td>
+                            </tr>
+                        </table>
+                        <p class="description__title">
+                            Двигатель:
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Модель</td>
+                                <td>KOHLER KD36V16-5BFS</td>
+                            </tr>
+                            <tr>
+                                <td>Производство</td>
+                                <td>Франция</td>
+                            </tr>
+                            <tr>
+                                <td>Обороты</td>
+                                <td>1500 об/м</td>
+                            </tr>
+                            <tr>
+                                <td>Топливо</td>
+                                <td>Дизельное</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tab-1" class="js-tab-list description__specification">
+                        <p class="t-standart-lr">При работе на объектах, не подключенных к централизованным энергосетям, или в случае невозможности использования местной линии электропередач вы можете арендовать генератор.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,7 +102,7 @@
 
     <!-- popup -->
     @@include("html/popup.html", {})
-    
+
 
     <script src="js/script.min.js"></script>
 </body>
