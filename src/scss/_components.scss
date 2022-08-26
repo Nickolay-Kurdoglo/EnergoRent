@@ -63,3 +63,33 @@
 .textInput::placeholder {
     @include textStyle(18px, 400, 16px)
 }
+
+.product__mark {
+    display: flex;
+    justify-content: center;
+
+    span {
+        padding: 6px 12px;
+        border-radius: 13px;
+        @include textStyle(14px, 400, 16px);
+        color: $c-mark;
+        background-color: $c-mark-bg;
+    }
+}
+
+.product__btn {
+    width: 80%;
+    padding: 16px 0 14px;
+    @include textStyle(18px, 400, 18px, uppercase);
+    border: $s-border-product-btn;
+    background-color: #fff;
+    color: $c-accent;
+    border-radius: 8px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.product__btn:hover {
+    background-color: $c-accent;
+    color: #FFF;
+}

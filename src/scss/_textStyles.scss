@@ -56,3 +56,19 @@
 .t-nav-footer:hover {
     color: $c-primary;
 }
+
+.product__power {
+    @include textStyle(16px, 400, 18px);
+    text-align: center;
+    color: #7E858B;
+}
+
+.product__price {
+    margin: 0 0 16px 0;
+    @include textStyle(24px, 500, 28px);
+    text-align: center;
+}
+
+.description__title {
+    @include textStyle(20px, 400, 23px);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("html/head.html", {
+"title" : "Main page"
+})
+
+<body>
+
+    <div class="product">
+        <div class="wrapper">
+            <h1 class="t-Heading">
+                Дизельная электростанция KOHLER-SDMO KD1500-F
+            </h1>
+            <section class="product__offer">
+                <div class="product__image">
+                    <img src="@img/product/KOHLER-SDMO KD1500-F.png" alt="KOHLER-SDMO KD1500-F">
+                </div>
+                <div class="product__info">
+                    <div class="product__power">Мощность: 1094 кВт</div>
+                    <div class="product__mark">
+                        <span>В наличии</span>
+                    </div>
+                    <p class="product__price">18 000 руб./смена</p>
+                    <div class="product__buttons">
+                        <button class="product__btn">Взять в аренду</button>
+                        <button class="product__btn js-popup-open">Задать вопрос</button>
+                    </div>
+                    <ul class="product__benefits">
+                        <li>Замена в случае неполадок</li>
+                        <li>Аренда с оператором</li>
+                        <li>Сервис 24/7</li>
+                        <li>Транспортные услуги</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="description">
+                <div class="description__tabs">
+                    <div class="tab active">Характеристики</div>
+                    <div class="tab">Описание</div>
+                </div>
+                <div class="description__content">
+                    <p class="description__title">
+                        Основные параметры:
+                    </p>
+                    <table>
+                        <tr><td>Номинальная мощность (основная)</td><td>1364 кВА / 1094 кВт</td></tr>
+                        <tr><td>Мощность (резервная)</td><td>1500 кВА / 1200 кВт</td></tr>
+                        <tr><td>Габариты</td><td>6800*2160*2760 (ДxШxВ), мм</td></tr>
+                        <tr><td>Вес</td><td>11 100 кг</td></tr>
+                    </table>
+                    <p class="description__title">
+                        Двигатель:
+                    </p>
+                    <table>
+                        <tr><td>Модель</td><td>KOHLER KD36V16-5BFS</td></tr>
+                        <tr><td>Производство</td><td>Франция</td></tr>
+                        <tr><td>Обороты</td><td>1500 об/м</td></tr>
+                        <tr><td>Топливо</td><td>Дизельное</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Почему выбирают нашу компанию -->
+    @@include("html/features.html", {})
+
+    <!-- Форма обратной связи -->
+    @@include("html/consult.html", {})
+
+    <!-- Footer -->
+    @@include("html/footer.html", {})
+
+    <!-- popup -->
+    @@include("html/popup.html", {})
+    
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

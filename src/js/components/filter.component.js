@@ -5,14 +5,19 @@ export class FilterComponent extends Component {
         super(nodeEl)
     }
 
-    init () {
-        const filtersArray = Array.from(this.$element.getElementsByClassName("filter"));
+    init() {
+        try {
+            const filtersArray = Array.from(this.$element.getElementsByClassName("filter"));
 
-        filtersArray.forEach((item, index) => {
-            item.addEventListener("click", event => {
-                if (!event.target.classList.contains("filter__header") && !event.target.parentNode.classList.contains("filter__header")) return;
-                item.classList.toggle("opened");
+            filtersArray.forEach((item, index) => {
+                item.addEventListener("click", event => {
+                    if (!event.target.classList.contains("filter__header") && !event.target.parentNode.classList.contains("filter__header")) return;
+                    item.classList.toggle("opened");
+                });
             });
-        });
+        } 
+        catch (error) {
+            console.warn(error)
+        }
     }
 }

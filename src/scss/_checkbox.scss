@@ -1,43 +1,42 @@
 .checkbox {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: .2s;
+    align-items: flex-end;
+    position: relative;
+    padding: 0 0 0 8px;
 
-    &_rec {
+    &_label {
+        cursor: pointer;
         display: block;
         position: relative;
-        width: 16px;
-        height: 16px;
-        background: #F2F2F2;
-        border: 1px solid #C7CBDF;
-        cursor: pointer;
+        width: 100%;
+        margin: 4px 0;
+    }
+    
+    &_original {
+        display: none;
+    }
+    
+    &_label::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -24px;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #bebebe;
+        border-radius: 4px;
     }
 
     &_check {
         position: absolute;
-        display: none;
-        top: 2px;
-        left: 1px;
+        opacity: 0;
+        top: 5px;
+        left: -14px;
     }
 
-    &_original {
-        display: none;
+    &_original:checked + &_check {
+        opacity: 1;
     }
-
-    &_original:checked + .checkbox_rec .checkbox_check {
-        display: block;
-    }
-
-    &_label {
-        flex-grow: 1;
-        padding: 6px 0 4px 0;
-        cursor: pointer;
-        @include textStyle(16px, 400, 16px);
-        color: #7E858B;
-    }
-}
-
-.checkbox:hover {
-    gap: 12px;
+    
 }
