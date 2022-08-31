@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <section class="rent">
+        <div class="wrapper">
+            <h1 class="t-Heading">
+                Условия аренды
+            </h1>
+            <p class="t-standart-lr">
+                Договор аренды оборудования, как подвид договора аренды, - это договор, в соответствии с которым
+                (арендодатель) предоставляет арендатору оборудование (приборы, машины, станки, механизмы и т.д.) за
+                плату во временное пользование. <br><br>
+
+                К образцу договора аренды оборудования, как правило, прилагается его принадлежности и относящиеся к нему
+                документы: технические паспорта, инструкции по эксплуатации (пользованию), сертификаты качества,
+                пригодности и т.п. <br><br>
+
+                Размер арендной платы и порядок ее уплаты устанавливается сторонами в образце договора аренды
+                оборудования. В течение всего срока действия договора аренды оборудования, размер арендной платы может
+                быть неоднократно изменен в случае, если это происходит по соглашению сторон. Изменение же арендной
+                платы по требованию только одной стороны может производиться не чаще одного раза в год, если иное не
+                будет предусмотрено в договоре аренды оборудования (п.3 ст.614 ГК РФ). Если противоположная сторона
+                будет возражать против такого изменения, вопрос разрешается в судебном порядке. <br><br>
+
+                Основной обязанностью арендатора, кроме оплаты арендной платы, также является соблюдение надлежащего
+                режима эксплуатации и хранения оборудования в соответствии с технической документацией.
+            </p>
+
+            <a href="#" class="rent__contract t-standart-lr">Образец договора аренды оборудования. Скачать (doc)</a>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="consult">
+    <div class="wrapper">
+        <h2 class="t-subtitle-2">
+            Отправить запрос на бесплатную консультацию
+        </h2>
+        <div class="consult__content">
+            <form action="">
+                <div class="consult__textFields">
+                    <input type="text" class="textInput" placeholder="Ваше имя">
+                    <input type="tel" class="textInput" placeholder="+7 (999) 999-99-99">
+                    <textarea class="textInput" name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="checkbox">
+
+                    <input class="checkbox_original" type="checkbox" id="policy">
+                    <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
+                    <label for="policy" name="policy" value="true" class="checkbox_label">Я согласен с пользовательским соглашением</label>
+
+                </div>
+                <button class="btn">
+                    Отправить
+                    <svg>
+                        <use href="img/icons/send.svg#send" xlink:href="img/icons/send.svg#send"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="consult__phone">
+                <a href="tel:+7 (495) 926 76 76 ">+7 (495) 926 76 76</a>
+                <p class="t-caption">Нужен генератор? Звоните!</p>
+            </div>
+            <img class="lightning" src="img/icons/bigLightning.svg" alt="">
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer__head">
+            <div class="footer__left">
+                <img src="img/icons/logo_wb.svg" alt="">
+                <button class="btn outlined js-popup-open">
+                    <svg>
+                        <use href="img/icons/phone.svg#phone" xlink:href="img/icons/phone.svg#phone"></use>
+                    </svg>
+                    Заказать звонок
+                </button>
+            </div>
+            <nav class="footer__nav">
+                <ul class="nav">
+                    <li><a href="" class="nav__item t-nav-footer">Главная</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Каталог генераторов</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Цены</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Наши улуги</a></li>
+                    <li><a href="" class="nav__item t-nav-footer">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contact">
+                <a class="tel" href="tel:+7 (495) 926 76 76 ">+7 (495) 926 76 76</a>
+                <p class="t-caption">Нужен генератор? Звоните!</p>
+                <a class="mail" href="mailto:energorent@gmail.com">energorent@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="wrapper">
+        <div class="footer__bottom">
+            <p class="t-standart">Аренда генераторов Москва и МО. Все права защищены © 2021  </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- popup -->
+    <section class="popup hide" id="popup">
+    <div class="popup__card">
+        <div class="popup__content">
+            <div class="popup__close" id="close">
+                <svg>
+                    <use href="img/icons/close.svg#close" xlink:href="img/icons/close.svg#close"></use>
+                </svg>
+            </div>
+            <h2 class="t-subtitle-2">Оставьте заявку</h2>
+            <form action="" class="pupup__form">
+                <input class="textInput" type="text" placeholder="ваше имя">
+                <input class="textInput" type="tel" placeholder="+ 7 (999) 999 99 99">
+                <button class="btn" type="submit">
+                    Отправить
+                    <svg>
+                        <use href="img/icons/send.svg#send" xlink:href="img/icons/send.svg#send"></use>
+                    </svg>
+                </button>
+                <div class="checkbox">
+
+                    <input class="checkbox_original" type="checkbox" id="popup_policy">
+                    <img class="checkbox_check" src="img/icons/сheck.svg" alt="">
+                    <label for="popup_policy" name="policy" value="true" class="checkbox_label">Я согласен с пользовательским соглашением</label>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup__overlay colored"></div>
+</section>
+
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
